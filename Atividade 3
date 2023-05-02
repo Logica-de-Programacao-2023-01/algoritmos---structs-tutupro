@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+type Retangulo struct {
+	Altura  float64
+	Largura float64
+}
+func area(p Retangulo) {
+	fmt.Printf("O Retângulo tem a área de: ", p.Altura * p.Largura)
+}
+
+func main() {
+	p := Retangulo{Altura: 2, Largura: 6}
+	area(p)
+}
