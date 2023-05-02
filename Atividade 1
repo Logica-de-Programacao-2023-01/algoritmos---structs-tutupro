@@ -1,0 +1,15 @@
+package main
+
+import "math"
+
+type Circulo struct {
+	  Raio float64
+ }
+func area(x Circulo){
+	area := math.Pi * x.Raio * x.Raio
+	println(area)
+}
+func main() {
+	x := Circulo{Raio: 2.54}
+	area(x)
+}
