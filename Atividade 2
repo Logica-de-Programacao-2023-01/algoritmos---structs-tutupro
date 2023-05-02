@@ -1,1 +1,33 @@
+package main
 
+import "fmt"
+
+type pessoa struct {
+	Nome string
+	Idade int
+	Endereco endereco
+}
+type endereco struct {
+	rua string
+	numero int
+	cidade string
+	estado string
+}
+
+func x(p pessoa) {
+	fmt.Println(p.Nome,p.Idade,p.Endereco)
+}
+
+func main() {
+
+	p := pessoa{
+		Nome:  "João",
+		Idade: 30,
+		Endereco: endereco {
+			rua:    "RuaY",
+			cidade: "Planaltina",
+			estado: "DF",
+		},
+	}
+	x(p)
+}
